@@ -5,7 +5,7 @@
 
 درود . 
 
-# 1- به مسیر زیر رفته
+ 1- به مسیر زیر رفته
 ```
  /var/www/html/modules/dashboard/applets/
 ```
@@ -13,11 +13,11 @@
 
 در ایزابل رفته دو پوشه IssabelMissedCalls و  IssabelAlarms  به طور کامل به پوشه applets منتقل کنید .
 
-# 2- تمام محتویات موجود در پوشه file رابه پوشه html در ایزابل منتقل کنید :
+ 2- تمام محتویات موجود در پوشه file رابه پوشه html در ایزابل منتقل کنید :
 ```
 /var/www/html
 ```
-# 3- سپس در محیط کنسول ایزابل دستورات زیر به به ترتیب وارد کنید :
+ 3- سپس در محیط کنسول ایزابل دستورات زیر به به ترتیب وارد کنید :
 
 ```
 chown -R asterisk:asterisk /var/www/html/modules/dashboard/applets/IssabelMissedCalls/
@@ -29,7 +29,7 @@ chown -R asterisk:asterisk /var/www/html/modules/dashboard/applets/IssabelAlarms
 
 ```
 
-# 4. ثبت اپلت تماس‌های از دست رفته
+ 4. ثبت اپلت تماس‌های از دست رفته
 
 ```
 sqlite3 /var/www/db/dashboard.db "INSERT INTO applet (code, name, icon) VALUES ('Applet_IssabelMissedCalls', 'تماس‌های از دست رفته', 'missed.png');"
@@ -41,7 +41,7 @@ sqlite3 /var/www/db/dashboard.db "INSERT INTO default_applet_by_user (id_applet,
 
 ```
 
-# 5. ثبت اپلت هشدارهای سیستم
+ 5. ثبت اپلت هشدارهای سیستم
 
 
 ```
@@ -54,7 +54,7 @@ sqlite3 /var/www/db/dashboard.db "INSERT INTO default_applet_by_user (id_applet,
 
 ```
 
-# 5. پاک کردن کش ایزابل
+ 6. پاک کردن کش ایزابل
 
 
 ```
@@ -62,3 +62,4 @@ rm -rf /var/www/html/var/templates_c/*
 
 ```
 
+در نهای از بخش مدیریت میز کار و یا applets_admin دو اپلت را فعال نمائید 
