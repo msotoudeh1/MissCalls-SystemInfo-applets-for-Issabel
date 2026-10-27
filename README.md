@@ -17,7 +17,7 @@
 ```
 /var/www/html
 ```
- 3- سپس در محیط کنسول ایزابل دستورات زیر به به ترتیب وارد کنید :
+ 3- سپس در محیط کنسول ایزابل دستورات زیر  را به ترتیب وارد کنید :
 
 ```
 chown -R asterisk:asterisk /var/www/html/modules/dashboard/applets/IssabelMissedCalls/
@@ -62,4 +62,4 @@ rm -rf /var/www/html/var/templates_c/*
 
 ```
 
-در نهای از بخش مدیریت میز کار و یا applets_admin دو اپلت را فعال نمائید 
+در نهایت از بخش مدیریت میز کار و یا applets_admin دو اپلت را فعال نمائید 
