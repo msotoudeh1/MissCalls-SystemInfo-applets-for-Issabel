@@ -5,13 +5,13 @@
 
 درود . 
 
- 1- به مسیر زیر رفته
+ 1- به مسیر زیر در ایزابل رفته دو پوشه IssabelMissedCalls و  IssabelAlarms  به طور کامل به پوشه applets منتقل کنید .
+
 ```
  /var/www/html/modules/dashboard/applets
 ```
  
 
-در ایزابل رفته دو پوشه IssabelMissedCalls و  IssabelAlarms  به طور کامل به پوشه applets منتقل کنید .
 
  2- تمام محتویات موجود در پوشه file رابه پوشه html در ایزابل منتقل کنید :
 ```
