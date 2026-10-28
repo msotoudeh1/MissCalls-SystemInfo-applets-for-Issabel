@@ -12,12 +12,13 @@
 ```
  
 
-
- 2- تمام محتویات موجود در پوشه file رابه پوشه html در ایزابل منتقل کنید :
+2- فایل های index.php موجود در پوشه های IssabelAlarms و IssabelMissedCalls را باز کرده و به جای database_password رمز دیتابیس ایزابل خود را قرار دهید 
+ 
+ 3- تمام محتویات موجود در پوشه file رابه پوشه html در ایزابل منتقل کنید :
 ```
 /var/www/html
 ```
- 3- سپس در محیط کنسول ایزابل دستورات زیر  را به ترتیب وارد کنید :
+ 4- سپس در محیط کنسول ایزابل دستورات زیر  را به ترتیب وارد کنید :
 
 ```
 chown -R asterisk:asterisk /var/www/html/modules/dashboard/applets/IssabelMissedCalls/
@@ -29,7 +30,7 @@ chown -R asterisk:asterisk /var/www/html/modules/dashboard/applets/IssabelAlarms
 
 ```
 
- 4. ثبت اپلت تماس‌های از دست رفته
+ 5. ثبت اپلت تماس‌های از دست رفته
 
 ```
 sqlite3 /var/www/db/dashboard.db "INSERT INTO applet (code, name, icon) VALUES ('Applet_IssabelMissedCalls', 'تماس‌های از دست رفته', 'missed.png');"
@@ -41,7 +42,7 @@ sqlite3 /var/www/db/dashboard.db "INSERT INTO default_applet_by_user (id_applet,
 
 ```
 
- 5. ثبت اپلت هشدارهای سیستم
+ 6. ثبت اپلت هشدارهای سیستم
 
 
 ```
@@ -54,7 +55,7 @@ sqlite3 /var/www/db/dashboard.db "INSERT INTO default_applet_by_user (id_applet,
 
 ```
 
- 6. پاک کردن کش ایزابل
+ 7. پاک کردن کش ایزابل
 
 
 ```
