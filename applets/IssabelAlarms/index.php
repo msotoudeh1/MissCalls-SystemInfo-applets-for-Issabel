@@ -63,7 +63,7 @@ class Applet_IssabelAlarms
 
         // ۵. بررسی وضعیت دقیق ترانک‌ها (با استفاده از دیتابیس)
         try {
-            $pdo = new PDO('mysql:host=localhost;dbname=asterisk;charset=utf8', 'asteriskuser', '123tosan8661');
+            $pdo = new PDO('mysql:host=localhost;dbname=asterisk;charset=utf8', 'asteriskuser', 'database_password');
             $stmt = $pdo->query("SELECT name, tech, channelid FROM trunks");
             $db_trunks = array();
             while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
