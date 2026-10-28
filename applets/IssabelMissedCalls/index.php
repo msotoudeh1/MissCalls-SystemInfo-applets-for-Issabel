@@ -32,7 +32,7 @@ class Applet_IssabelMissedCalls
     private function fetchMissedCalls($period) {
         $missed = array();
         try {
-            $pdo = new PDO('mysql:host=localhost;dbname=asteriskcdrdb;charset=utf8', 'asteriskuser', '123tosan8661');
+            $pdo = new PDO('mysql:host=localhost;dbname=asteriskcdrdb;charset=utf8', 'asteriskuser', 'database_password');
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             
             $where = "DATE(calldate) = CURDATE()";
